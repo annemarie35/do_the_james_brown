@@ -19,7 +19,7 @@ def api_root():
 
 def james_image_answer(answer):
     images = {'Damn right. I am somebody': 'http://33.media.tumblr.com/f1cfc2b4740583156e4a5e6c8514cec6/tumblr_mhqdtm8KCD1qedb29o1_r2_500.gif',\
-    'Weird': './images/weird.gif',
+    'I feel Good !': 'http://liquor.s3.amazonaws.com/wp-content/uploads/2014/06/james-brown-gif-2.gif',
     }
     return images[answer]
 
@@ -38,6 +38,18 @@ def james_dance_img(dance):
     'CamelWalk': '/images/camel_walk.gif',
     }
     return images[dance]
+
+# def contact():
+#     if request.method == 'POST':
+#         if request.form['submit'] == 'Do Something':
+#             pass # do something
+#         elif request.form['submit'] == 'Do Something Else':
+#             pass # do something else
+#         else:
+#             pass # unknown
+#     elif request.method == 'GET':
+#         return render_template('contact.html', form=form)
+
 
 if __name__ == '__main__':
     app.run(debug = True)
