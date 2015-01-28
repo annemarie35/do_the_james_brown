@@ -9,11 +9,17 @@ Using flask & python
 
 - Git clone
 - Start the server with `python flask_demo.py`
+- run the server
+and...
 
-#Smile !
+*Smile !
 
 
 #What to do now ?
 
 - add a layout
 - continue the dance lessons : the idea is to have various buttons with a dance name. When you click the button, a gif appears.
+
+- continue the tests for james & james_dance
+
+- find a way to link to static url !
