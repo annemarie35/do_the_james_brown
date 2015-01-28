@@ -6,7 +6,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css">
   
     <style>
       body {
@@ -17,49 +17,56 @@
   </head>
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">James Brown Knows</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="{{url_for('accueil')}}">Ask James</a></li>
-              <li><a href="{{url_for('dance')}}">Dancing lessons</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-    a href=""
 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+       <ul class="nav navbar-nav">
+          <li class="active"><a href="/index">Index<span class="sr-only">(current)</span></a></li>
+          <li><a href="{{url_for('accueil')}}">Ask James</a></li>
+       
+          <li><a href="{{url_for('dance')}}">Dancing lessons</a></li>
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Programmes <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/fizzbuzz">FizzBuzz</a></li>
+                <li><a href="/roman_to_nb">Roman to number</a></li>
+                <li><a href="/garros">Garros</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+        </li>
+        </ul>
 
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/annemarie35" class="icones"><i class="fa fa-github"></i></a></li>
+          <li><a href="#" class="icones"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/LoozBonita" class="icones"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="icones"><i class="fa fa-instagram" ></i></a></li>
+    <div>
+  </nav>
 
 <div class="container">
   <h1>Just ask Mr Brown</h1>
 
-<form method="post" action="{{ url_for('api_root') }}">
-       <fieldset>
-<legend>Please choose your sentence:</legend>
-<select name="sentence">
-<option value="Are You Somebody?">Are You Somebody?</option>
-</select>
-<input type="submit" value="Valider" class="btn btn-danger" /></form> 
-</fieldset>
+    <form method="post" action="{{ url_for('api_root') }}">
+      <fieldset>
+        <legend>Please choose your sentence:</legend>
+        <select name="sentence">
+        <option value="Are You Somebody?">Are You Somebody?</option>
+        </select>
+        <input type="submit" value="Valider" class="btn btn-danger" /></form> 
+      </fieldset>
 
 <blockquote>
   You said "{{sentence}}" to James and James answers : <strong>{{answer}}</strong> !
-<br/ >
-<img src="{{image}}">
+  <br/ >
+  <img src="{{image}}">
 </blockquote>
-  </div>
-  </div>
+
+</div>
+</div>
 
 </body>
 </html>

@@ -11,3 +11,9 @@ Using flask & python
 - Start the server with `python flask_demo.py`
 
 #Smile !
+
+
+#What to do now ?
+
+- add a layout
+- continue the dance lessons : the idea is to have various buttons with a dance name. When you click the button, a gif appears.

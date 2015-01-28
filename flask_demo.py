@@ -7,7 +7,6 @@ app = Flask(__name__)
 def accueil():
    return render_template('index.html')
 
-
 @app.route('/', methods=['GET','POST'])
 def api_root():
     james = James()
