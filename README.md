@@ -12,14 +12,16 @@ Using flask & python
 - run the server
 and...
 
-*Smile !
+*Have fun(k) !
 
 
 #What to do now ?
 
-- add a layout
+- add a layout ! 
+- clean the bootstrap menu
+
 - continue the dance lessons : the idea is to have various buttons with a dance name. When you click the button, a gif appears.
 
 - continue the tests for james & james_dance
 
-- find a way to link to static url !
+- find a way to link to static url ! (images & style.css)
