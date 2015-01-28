@@ -10,8 +10,8 @@ class TestJames(unittest.TestCase):
     def test_james_answer_to_question(self):
         self.assertEqual(self.james.ask("How are you?"), "Sure")
 
-    # def test_bob_answer_to_yelling(self):
-    #     self.assertEqual(self.bob.ask("HELLO"), "Woah")
+    #def test_bob_answer_to_yelling(self):
+    #    self.assertEqual(self.bob.ask("HELLO"), "Woah")
 
     # def test_bob_answer_to_yelling_question(self):
     #     self.assertEqual(self.bob.ask("HELLO?"), "Woah")

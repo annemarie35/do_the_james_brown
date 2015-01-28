@@ -9,12 +9,24 @@
     <div id="container">
     <div id="dancing">
     <h1>James Brown gives you dance lessons</h1>
-    <form method="post" action="{{ url_for('api_root') }}">
-    <input type="submit" name="dance" value="Boogaloo">
+    <form method="post" action="{{ url_for('dance') }}">
+    <input type="submit" name="dance_style" value="Boogaloo">
+    </form>
+    <form method="post" action="{{ url_for('dance') }}">
+    <input type="submit" name="dance_style" value="CamelWalk">
+    </form>
+    <form method="post" action="{{ url_for('dance') }}">
+    <input type="submit" name="dance_style" value="FunkyChicken">
+    </form>
+    <form method="post" action="{{ url_for('dance') }}">
+    <input type="submit" name="dance_style" value="MashedPotatoes">
+    </form>
+    <form method="post" action="{{ url_for('dance') }}">
+    <input type="submit" name="dance_style" value="Robot">
     </form>
     </div>
       <br/ >
-      <img src="{{dance}}">
+      <img src="{{image}}">
     </div>
 </body>
 </html>

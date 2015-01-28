@@ -1,5 +1,6 @@
 from flask import Flask, url_for, render_template, request
 from james import *
+from james_dance import *
 
 app = Flask(__name__)
 
@@ -17,21 +18,25 @@ def api_root():
     return render_template("index.html")
 
 def james_image_answer(answer):
-    images = {'Sure': 'http://www.relativelydigital.com/wp-content/uploads/2011/03/SpongeBob-SquarePants.jpeg',\
-    'Woah': 'https://year5birgu.files.wordpress.com/2011/04/sponge_bob.jpg',\
-    'Damn right. I am somebody': 'http://33.media.tumblr.com/f1cfc2b4740583156e4a5e6c8514cec6/tumblr_mhqdtm8KCD1qedb29o1_r2_500.gif',\
-    'Fine': 'http://www.pycomall.com/images/P1/Sponge_Bob_Square_Pants_1.jpg',\
-    'Weird': 'http://38.media.tumblr.com/2a2abf3896b514125e56b5dcaab099cb/tumblr_n8u606TKhq1qedb29o1_400.gif',\
-    'Whatever':'http://mypartyshirt.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/p/sponge-bob-shirt_1_3.png'\
+    images = {'Damn right. I am somebody': 'http://33.media.tumblr.com/f1cfc2b4740583156e4a5e6c8514cec6/tumblr_mhqdtm8KCD1qedb29o1_r2_500.gif',\
+    'Weird': './images/weird.gif',
     }
     return images[answer]
 
 @app.route('/dance', methods=['GET','POST'])
+
 def dance():
+    dance = Dance()
+    if request.method == 'POST':
+        dance_style = request.form['dance_style']
+        image = james_dance_img(dance.jamesdance(dance_style))
+        return render_template("dance_lessons.html", dance_style=dance_style, answer=dance.jamesdance(dance_style), image=image)
     return render_template("dance_lessons.html")
 
-def james_dance(dance):
-    images = {'Boogaloo' : 'http://www.gifwave.com/media/376349/70s-dancing-james-brown-boogaloo-soul-connection.gif'}
+def james_dance_img(dance):
+    images = {'Boogaloo': 'http://www.gifwave.com/media/376349/70s-dancing-james-brown-boogaloo-soul-connection.gif',\
+    'CamelWalk': '/images/camel_walk.gif',
+    }
     return images[dance]
 
 if __name__ == '__main__':
