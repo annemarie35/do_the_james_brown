@@ -1,27 +1,63 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div id="container">
-    <div id="dancing">
-    <h1>James Brown gives you dance lessons</h1>
-    <form method="post" action="{{ url_for('dance') }}">
-    <input type="submit" name="dance_style" value="Boogaloo">
-    </form>
-    <form method="post" action="{{ url_for('dance') }}">
-    <input type="submit" name="dance_style" value="CamelWalk">
-    </form>
-    <form method="post" action="{{ url_for('dance') }}">
-    <input type="submit" name="dance_style" value="FunkyChicken">
-    </form>
-    <form method="post" action="{{ url_for('dance') }}">
-    <input type="submit" name="dance_style" value="MashedPotatoes">
-    </form>
-    <form method="post" action="{{ url_for('dance') }}">
-    <input type="submit" name="dance_style" value="Robot">
-    </form>
+
+<div class="container">
+  <h1>James Brown gives you dance lessons</h1>
+  <div class="row">
+    <div class="col-md-8">
+
+
+      <div class="container-fluid">
+
+        <div class="row-fluid">
+          <div class="span4 offset4 text-center">
+            <button class="btn">1-1</button>
+            <button class="btn">1-2</button>s
+          </div>
+        </div>
+
+      </div>
+
+
+
     </div>
-      <br/ >
-      <img src="{{image}}">
+
+    <div class="col-md-4">
+      <div class="container">
+        <img src="{{image}}">
+      </div>
     </div>
+
+  </div>
+
+
+
+      <div class="span3 step center">
+        <form method="post" action="{{ url_for('dance') }}">
+        <input class="btn" type="submit" name="dance_style" value="Boogaloo">
+        </form>
+      </div>
+      <div class="span3 step center">
+        <form method="post" action="{{ url_for('dance') }}">
+        <input class="btn" type="submit" name="dance_style" value="CamelWalk">
+        </form>
+      </div>
+      <div class="span3 step center">
+        <form method="post" action="{{ url_for('dance') }}">
+        <input class="btn" type="submit" name="dance_style" value="FunkyChicken">
+        </form>
+      </div>
+      <div class="span3 step center">
+        <form method="post" action="{{ url_for('dance') }}">
+        <input class="btn" type="submit" name="dance_style" value="MashedPotatoes">
+        </form>
+      </div>
+      <div class="span3 step center">
+        <form method="post" action="{{ url_for('dance') }}">
+        <input class="btn" type="submit" name="dance_style" value="Robot">
+        </form>
+        <div class="span3 step center">
+</div>
+
 
 {% endblock %}
-
