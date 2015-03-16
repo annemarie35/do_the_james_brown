@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+  <h1>Just ask Mr Brown</h1>
+  <br />
+
+    <form method="post" action="{{ url_for('api_root') }}">
+      <fieldset>
+        <legend>Please choose your sentence:</legend>
+        <select name="sentence">
+        <option value="Are You Somebody?">Are You Somebody?</option>
+        <option value="How are you?">How are you?</option>
+        </select>
+        <input type="submit" value="Valider" class="btn btn-danger" /></form> 
+      </fieldset>
+
+<br />      
+
+<blockquote>
+  <img src="{{image}}">
+  <br/ >
+  You said "{{sentence}}" to James and James answers : <strong>{{answer}}</strong> !
+</blockquote>
+
+</div>
+</div>
+
+{% endblock %}
+

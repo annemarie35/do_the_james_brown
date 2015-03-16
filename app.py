@@ -9,19 +9,24 @@ app = Flask(__name__)
 def accueil():
    return render_template('index.html')
 
+@app.route('/ask_mrbrown')
+def ask_mrbrown():
+   return render_template('ask_mrbrown.html')
+
 @app.route('/', methods=['GET','POST'])
 def api_root():
     james = James()
     if request.method == 'POST':
         sentence = request.form['sentence']
         image = james_image_answer(james.ask(sentence))
-        return render_template("index.html", sentence=sentence, answer=james.ask(sentence), image=image)
-    return render_template("index.html")
+        return render_template("ask_mrbrown.html", sentence=sentence, answer=james.ask(sentence), image=image)
+    return render_template("ask_mrbrown.html")
 
 def james_image_answer(answer):
     images = {'Damn right. I am somebody': 'http://33.media.tumblr.com/f1cfc2b4740583156e4a5e6c8514cec6/tumblr_mhqdtm8KCD1qedb29o1_r2_500.gif',\
     'I feel Good !': 'http://liquor.s3.amazonaws.com/wp-content/uploads/2014/06/james-brown-gif-2.gif',
     }
+    
     return images[answer]
 
 @app.route('/dance', methods=['GET','POST'])

@@ -21,7 +21,8 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
        <ul class="nav navbar-nav">
-          <li><a href="{{url_for('accueil')}}">Ask James</a></li>
+          <li><a href="{{url_for('accueil')}}">Home</a></li>
+          <li><a href="{{url_for('ask_mrbrown')}}">Ask James</a></li>
           <li><a href="{{url_for('dance')}}">Dancing lessons</a></li>
        </ul>
 
@@ -33,10 +34,14 @@
     <div>
   </nav>
 
-    <div class="container">
-      {% block content %}
-      {% endblock %}
-    </div>
+<div class="container">
+  {% block content %}
+  {% endblock %}
+</div>
 
-  </body>
+<footer class="footer">
+<div class="container"> <h2>Made with Flask & Bootstrap </h2></div>
+</footer>
+
+</body>
 </html>
