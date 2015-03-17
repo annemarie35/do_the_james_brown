@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Do the James Brown !</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Google Web Fonts-->
+
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:700" rel='stylesheet' type='text/css'> <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css">
+
 
     <style>
       body {
@@ -21,16 +30,12 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
        <ul class="nav navbar-nav">
-          <li><a href="{{url_for('accueil')}}">Home</a></li>
+          /* <li><a href="{{url_for('accueil')}}">Home</a></li> */
           <li><a href="{{url_for('ask_mrbrown')}}">Ask James</a></li>
           <li><a href="{{url_for('dance')}}">Dancing lessons</a></li>
        </ul>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/annemarie35" class="icones"><i class="fa fa-github"></i></a></li>
-          <li><a href="#" class="icones"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/LoozBonita" class="icones"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#" class="icones"><i class="fa fa-instagram" ></i></a></li>
+
     <div>
   </nav>
 
@@ -39,9 +44,15 @@
   {% endblock %}
 </div>
 
-<footer class="footer">
-<div class="container"> <h2>Made with Flask & Bootstrap </h2></div>
-</footer>
+<div class="footer">
+<span>Made with Flask & Bootstrap </span>
+  
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="https://github.com/annemarie35" class="icones"><i class="fa fa-github" > </i></a></li>
+    <li><a href="https://twitter.com/LoozBonita" class="icones"><i class="fa fa-twitter"> </i></a></li>
+    <li><a href="#" class="icones"><i class="fa fa-instagram" > </i></a></li>
+  </ul>
+</div>
 
 </body>
 </html>

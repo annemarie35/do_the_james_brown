@@ -1,9 +1,54 @@
 body {
-	background-color:white;
-	background-image:url();
+	background-color: white;
+	background-image: url('images/jamesbrown.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: cover;
 	margin: 10px;
   	padding: 0;
   	font: 14px Verdana, sans-serif;
 }
 
 h1 { font-family: 'Archivo Narrow', sans-serif; font-weight: 400; }
+h2 { font-family: 'Archivo Narrow', sans-serif; font-weight: 100; }
+
+#home-title {
+    color: #FFF;
+    font-family: "Varela",sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity:0.5;
+}
+
+#page {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    margin-top: -160px;
+    margin-left: -400px;
+    top: 38%;
+    left: 50%;
+}
+
+.icones {
+  color: white;
+}
+
+.footer
+{
+position: relative;
+margin-top: 200px; /* negative value of footer height */
+height: 50px;
+width: 100%;
+clear:both;
+padding-top:20px;
+color:#fff;
+background-color: #222;
+opacity:0.8;
+} 
