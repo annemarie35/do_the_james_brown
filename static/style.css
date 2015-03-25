@@ -12,8 +12,8 @@ body {
   	font: 14px Verdana, sans-serif;
 }
 
-h1 { font-family: 'Archivo Narrow', sans-serif; font-weight: 400; }
-h2 { font-family: 'Archivo Narrow', sans-serif; font-weight: 100; }
+h1 { font-family: 'Archivo Narrow', sans-serif; font-weight: 400; color: white; }
+h2 { font-family: 'Archivo Narrow', sans-serif; font-weight: 100; color: white; }
 
 #home-title {
     color: #FFF;
@@ -40,7 +40,7 @@ h2 { font-family: 'Archivo Narrow', sans-serif; font-weight: 100; }
   color: white;
 }
 
-.footer
+ .footer
 {
 position: relative;
 margin-top: 200px; /* negative value of footer height */
@@ -52,3 +52,4 @@ color:#fff;
 background-color: #222;
 opacity:0.8;
 } 
+
