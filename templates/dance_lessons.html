@@ -1,9 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<h1>James Brown gives you dance lessons</h1>
+<div class="container">
+  <h1>James Brown gives you dance lessons</h1>
 
-<div class="container-fluid">
+   
+<div class="container-fluid" id="content">
   <div class="row-fluid">
     <div class="span5 offset5 text-center">
 
@@ -31,13 +33,19 @@
         <form method="post" action="{{ url_for('dance') }}">
         <input class="btn" type="submit" name="dance_style" value="Robot">
         </form>
-</div>
-</div>     
- <div class="container">
-        <img src="{{image}}">
-      </div>
-</div>
+		</div>
+	</div>
+</div>    
 
 
+
+<blockquote>
+  <img src="{{image}}">
+  <br/ >
+ Here just for you, James dancing the "{{dance_style}}" !
+</blockquote>
+
+</div>
+</div>
 
 {% endblock %}
