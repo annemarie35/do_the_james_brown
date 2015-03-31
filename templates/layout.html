@@ -5,14 +5,15 @@
     <title>Do the James Brown !</title>
     
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='sticky-footer-navbar.css') }}" rel="stylesheet">
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--Google Web Fonts-->
 
+    <!--Google Web Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:700" rel='stylesheet' type='text/css'> <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css">
 
@@ -39,20 +40,53 @@
     <div>
   </nav>
 
-<div class="container">
+<div class="page">
   {% block content %}
   {% endblock %}
 </div>
 
-<div class="footer">
-<span>Made with Flask & Bootstrap </span>
-  
-  <ul class="nav navbar-nav navbar-right">
-    <li><a href="https://github.com/annemarie35" class="icones"><i class="fa fa-github" > </i></a></li>
-    <li><a href="https://twitter.com/LoozBonita" class="icones"><i class="fa fa-twitter"> </i></a></li>
-    <li><a href="#" class="icones"><i class="fa fa-instagram" > </i></a></li>
-  </ul>
-</div>
+<footer class="footer">
+<div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="https://twitter.com/LoozBonita">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://github.com/annemarie35">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+               
+            </div>
+            <p class="copyright text-muted">Made with Flask & Bootstrap 2015</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+    background-color: white;
 	background-image: url('images/jamesbrown.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -40,16 +40,7 @@ h2 { font-family: 'Archivo Narrow', sans-serif; font-weight: 100; color: white; 
   color: white;
 }
 
- .footer
-{
-position: relative;
-margin-top: 200px; /* negative value of footer height */
-height: 50px;
-width: 100%;
-clear:both;
-padding-top:20px;
-color:#fff;
-background-color: #222;
-opacity:0.8;
-} 
+#content{
+    color: white;
 
+}
