@@ -5,6 +5,11 @@ The soul brother number one gives you some advices and lessons.
 A simple game inspired by Bob on exercism.io
 Using flask & python
 
+# Needed 
+
+Python
+[Flask](http://flask.pocoo.org/)
+
 # How to install ?
 
 - Git clone

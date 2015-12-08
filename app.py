@@ -40,7 +40,7 @@ def dance():
     return render_template("dance_lessons.html")
 
 def james_dance_img(dance):
-    images = {'Boogaloo': 'http://www.gifwave.com/media/376349/70s-dancing-james-brown-boogaloo-soul-connection.gif',\
+    images = {'Boogaloo': url_for('static', filename='images/boogaloo.gif'),
     'CamelWalk': url_for('static', filename='images/camel_walk.gif'),
     'FunkyChicken': url_for('static', filename='images/funky_chicken.gif'),
     'MashedPotatoes': url_for('static', filename='images/mashed_potatoes.gif'),
