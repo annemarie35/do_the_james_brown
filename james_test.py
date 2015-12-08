@@ -8,7 +8,7 @@ class TestJames(unittest.TestCase):
         self.james = James()
 
     def test_james_answer_to_question(self):
-        self.assertEqual(self.james.ask("How are you?"), "Sure")
+        self.assertEqual(self.james.ask("How are you?"), "I feel Good !")
 
 if __name__ == '__main__':
     unittest.main()
