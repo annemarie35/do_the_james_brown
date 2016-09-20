@@ -5,7 +5,7 @@ The soul brother number one gives you some advices and lessons.
 A simple game inspired by Bob on exercism.io
 Using flask & python
 
-# Needed 
+# Needed
 
 Python
 [Flask](http://flask.pocoo.org/)
@@ -42,10 +42,3 @@ heroku create --buildpack git://github.com/heroku/heroku-buildpack-python.git
 - find a way to link to static url ! (images & style.css). Compiler les assets ? --> DONE (Static file)
 
 - add a bot for Twitter, the Jaaammmess Bot ! (javascript)
-
-# Déployement sur Scalingo
-
-- http://cli.scalingo.com/
-- https://github.com/Scalingo/sample-python-flask
-- https://the-funky-chicken.scalingo.io
-- https://my.scalingo.com/apps/keys
